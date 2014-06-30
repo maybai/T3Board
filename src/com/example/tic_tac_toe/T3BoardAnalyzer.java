@@ -118,7 +118,7 @@ public class T3BoardAnalyzer {
 						strResults = CheckIntersectOfWins(strObject, c);
 						if(strResults==ERROR)return OutputState(BoardState.ERROR_TYPE_MORE_WINS,c);
 					}
-					if(count>mNumToWin)return OutputState(BoardState.ERROR_TYPE_LONG_JOIN,c);
+					if(count>=2*mNumToWin)return OutputState(BoardState.ERROR_TYPE_LONG_JOIN,c);
 				}
 				//Searching to top
 				for(i=0,count=0;(x-i>=0)&&(mElement[x-i][y]==c);i++){
@@ -130,7 +130,7 @@ public class T3BoardAnalyzer {
 						strResults = CheckIntersectOfWins(strObject, c);
 						if(strResults==ERROR)return OutputState(BoardState.ERROR_TYPE_MORE_WINS,c);
 					}
-					if(count>mNumToWin)return OutputState(BoardState.ERROR_TYPE_LONG_JOIN,c);
+					if(count>=2*mNumToWin)return OutputState(BoardState.ERROR_TYPE_LONG_JOIN,c);
 				}
 				//Searching to top-left
 				for(i=0,count=0;(x-i>=0)&&(y-i>=0)&&(mElement[x-i][y-i]==c);i++){
@@ -142,7 +142,7 @@ public class T3BoardAnalyzer {
 						strResults = CheckIntersectOfWins(strObject, c);
 						if(strResults==ERROR)return OutputState(BoardState.ERROR_TYPE_MORE_WINS,c);
 					}
-					if(count>mNumToWin)return OutputState(BoardState.ERROR_TYPE_LONG_JOIN,c);
+					if(count>=2*mNumToWin)return OutputState(BoardState.ERROR_TYPE_LONG_JOIN,c);
 				}
 				//Searching to top-right
 				for(i=0,count=0;(x-i>=0)&&(y+i<mBoardSize)&&(mElement[x-i][y+i]==c);i++){
@@ -154,7 +154,7 @@ public class T3BoardAnalyzer {
 						strResults = CheckIntersectOfWins(strObject, c);
 						if(strResults==ERROR)return OutputState(BoardState.ERROR_TYPE_MORE_WINS,c);
 					}
-					if(count>mNumToWin)return OutputState(BoardState.ERROR_TYPE_LONG_JOIN,c);
+					if(count>=2*mNumToWin)return OutputState(BoardState.ERROR_TYPE_LONG_JOIN,c);
 				}
 			}	
 		}
@@ -220,7 +220,7 @@ public class T3BoardAnalyzer {
 			output = String.format("%1$s Wins",symbol);
 			break;
 		case BoardState.ERROR_TYPE_LONG_JOIN:
-			output = String.format("Invalid Board More Than Win Number %1$ss Jointed",symbol);
+			output = String.format("Invalid Board More Than Twice Win Number %1$ss Jointed",symbol);
 			break;
 		case BoardState.ERROR_TYPE_MORE_WINS:
 			output = String.format("Invalid Board More Than 2 Wins");

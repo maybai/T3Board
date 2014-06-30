@@ -1,11 +1,11 @@
 ==========BOARD: 1==============
-XOXO
+XOX.
 OXO.
 O.X.
 ...X
 
 3 in a row to win
-Invalid Board More Than Win Number Xs Jointed
+X Wins
 ===================================
 
 ==========BOARD: 2==============
