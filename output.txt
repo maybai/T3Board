@@ -1,0 +1,111 @@
+==========BOARD: 1==============
+XOXO
+OXO.
+O.X.
+...X
+
+3 in a row to win
+Invalid Board More Than Win Number Xs Jointed
+===================================
+
+==========BOARD: 2==============
+OOO...
+XX..X.
+.XOXOO
+OXXOOO
+OX.X..
+XX..X.
+
+5 in a row to win
+Invalid Board More Than 2 Wins
+===================================
+
+==========BOARD: 3==============
+OOO...
+X.X.X.
+.XXXOO
+OOXOOO
+OXXX..
+XOX.X.
+
+5 in a row to win
+X Wins
+===================================
+
+==========BOARD: 4==============
+.XXXOO
+OXXXOO
+OXXX..
+.OO...
+......
+......
+
+3 in a row to win
+Invalid Board More Than 2 Wins
+===================================
+
+==========BOARD: 5==============
+OXOX
+XO..
+O.XX
+....
+
+3 in a row to win
+Invalid Board O Wins But Last Input May Be X
+===================================
+
+==========BOARD: 6==============
+OXOX
+XOXO
+XOXO
+OXOX
+
+3 in a row to win
+DRAW
+===================================
+
+==========BOARD: 7==============
+X
+
+1 in a row to win
+X Wins
+===================================
+
+==========BOARD: 8==============
+O
+
+1 in a row to win
+Invalid Board Too Many Os
+===================================
+
+==========BOARD: 9==============
+XOXO
+OXO.
+X.X.
+....
+
+3 in a row to win
+X Wins
+===================================
+
+==========BOARD: 10==============
+XXX.
+O.OO
+OO..
+.XXX
+
+3 in a row to win
+Invalid Board More Than 2 Wins
+===================================
+
+==========BOARD: 11==============
+.....
+.....
+.....
+.....
+.....
+
+3 in a row to win
+IN PROGRESS
+===================================
+

@@ -1,0 +1,57 @@
+11
+4 3
+XOXO
+OXO.
+O.X.
+...X
+6 5
+OOO...
+XX..X.
+.XOXOO
+OXXOOO
+OX.X..
+XX..X.
+6 5
+OOO...
+X.X.X.
+.XXXOO
+OOXOOO
+OXXX..
+XOX.X.
+6 3
+.XXXOO
+OXXXOO
+OXXX..
+.OO...
+......
+......
+4 3
+OXOX
+XO..
+O.XX
+....
+4 3
+OXOX
+XOXO
+XOXO
+OXOX
+1 1
+X
+1 1
+O
+4 3
+XOXO
+OXO.
+X.X.
+....
+4 3
+XXX.
+O.OO
+OO..
+.XXX
+5 3
+.....
+.....
+.....
+.....
+.....
