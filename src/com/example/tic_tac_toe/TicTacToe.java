@@ -62,41 +62,43 @@ public class TicTacToe {
 					XCount++;
 				else
 					OCount++;					
-				if(strResults!='E'){
-					for(i=0,count=0;(y-i>=0)&&(mElement[x][y-i]==mElement[x][y]);i++){
-						if(++count==mNumToWin){
-							strObject.clear();
-							for(j=0; j<mNumToWin; j++)
-								strObject.add(x+" "+(y-j));
-							strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
-						}
+				for(i=0,count=0;(y-i>=0)&&(mElement[x][y-i]==mElement[x][y]);i++){
+					if(strResults!='E'&&++count==mNumToWin){
+						strObject.clear();
+						for(j=0; j<mNumToWin; j++)
+							strObject.add(x+" "+(y-j));
+						strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
+						
 					}
-					for(i=0,count=0;(x-i>=0)&&(mElement[x-i][y]==mElement[x][y]);i++){
-						if(++count==mNumToWin)
-						{
-							strObject.clear();
-							for(j=0; j<mNumToWin; j++)
-								strObject.add(x-j+" "+y);
-							strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
-						}
+				}
+				for(i=0,count=0;(x-i>=0)&&(mElement[x-i][y]==mElement[x][y]);i++){
+					if(strResults!='E'&&++count==mNumToWin)
+					{
+						strObject.clear();
+						for(j=0; j<mNumToWin; j++)
+							strObject.add(x-j+" "+y);
+						if (strResults=='E') break;
+						strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
 					}
-					for(i=0,count=0;(x-i>=0)&&(y-i>=0)&&(mElement[x-i][y-i]==mElement[x][y]);i++){
-						if(++count==mNumToWin)
-						{
-							strObject.clear();
-							for(j=0; j<mNumToWin; j++)
-								strObject.add(x-j+" "+(y-j));
-							strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
-						}
+				}
+				for(i=0,count=0;(x-i>=0)&&(y-i>=0)&&(mElement[x-i][y-i]==mElement[x][y]);i++){
+					if(strResults!='E'&&++count==mNumToWin)
+					{
+						strObject.clear();
+						for(j=0; j<mNumToWin; j++)
+							strObject.add(x-j+" "+(y-j));
+						if (strResults=='E') break;
+						strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
 					}
-					for(i=0,count=0;(x-i>=0)&&(y+i<mBoardSize)&&(mElement[x-i][y+i]==mElement[x][y]);i++){
-						if(++count==mNumToWin)
-						{
-							strObject.clear();
-							for(j=0; j<mNumToWin; j++)
-								strObject.add(x-j+" "+(y+j));
-							strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
-						}
+				}
+				for(i=0,count=0;(x-i>=0)&&(y+i<mBoardSize)&&(mElement[x-i][y+i]==mElement[x][y]);i++){
+					if(strResults!='E'&&++count==mNumToWin)
+					{
+						strObject.clear();
+						for(j=0; j<mNumToWin; j++)
+							strObject.add(x-j+" "+(y+j));
+						if (strResults=='E') break;
+						strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
 					}
 				}
 			}
