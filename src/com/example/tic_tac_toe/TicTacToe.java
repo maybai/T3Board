@@ -77,7 +77,6 @@ public class TicTacToe {
 						strObject.clear();
 						for(j=0; j<mNumToWin; j++)
 							strObject.add(x-j+" "+y);
-						if (strResults=='E') break;
 						strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
 					}
 				}
@@ -87,7 +86,6 @@ public class TicTacToe {
 						strObject.clear();
 						for(j=0; j<mNumToWin; j++)
 							strObject.add(x-j+" "+(y-j));
-						if (strResults=='E') break;
 						strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
 					}
 				}
@@ -97,7 +95,6 @@ public class TicTacToe {
 						strObject.clear();
 						for(j=0; j<mNumToWin; j++)
 							strObject.add(x-j+" "+(y+j));
-						if (strResults=='E') break;
 						strResults = CheckIntersectOfWins(mWinlist, strObject, mElement[x][y]);
 					}
 				}
